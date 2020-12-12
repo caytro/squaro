@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@color/colorPrimary"
+    android:isScrollContainer="false"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    tools:context=".MainActivity">
+
+     <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/activity_main_titre_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="cursive"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+         <TextView
+             android:id="@+id/ativity_main_info_textView"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:fontFamily="sans-serif"
+             android:text="@string/info"
+             android:textAlignment="center"
+             android:textSize="20sp"
+             app:layout_constraintTop_toBottomOf="@+id/activity_main_titre_textView" />
+
+         <fr.lineac.squaro2.CadreSquaro
+             android:id="@+id/activity_main_grille_canvas"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/ativity_main_info_textView" />
+
+        <Button
+            android:id="@+id/activity_main_verifier_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="28dp"
+            android:background="#404040"
+            android:text="@string/verifier"
+            android:textColor="#E0E0E0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/activity_main_rejouer_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="32dp"
+            android:background="#404040"
+            android:text="@string/rejouer"
+            android:textColor="#E0E0E0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_verifier_button" />
+
+        <CheckBox
+            android:id="@+id/activity_main_couleur_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modeCouleur"
+            app:layout_constraintEnd_toStartOf="@+id/activity_main_rejouer_button"
+            app:layout_constraintStart_toEndOf="@+id/activity_main_verifier_button"
+            app:layout_constraintTop_toTopOf="@+id/activity_main_verifier_button" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Squaro2</string>
+    <string name="info">-----</string>
+    <string name="rejouer">Rejouer</string>
+    <string name="numClick">Cick n° %d</string>
+    <string name="verifier">Verifier</string>
+    <string name="bravo">BRAVO !\n Grille résolue en %d coups</string>
+    <string name="essaieEncore">Essaie Encore</string>
+    <string name="modeCouleur">Couleurs</string>
+</resources>
